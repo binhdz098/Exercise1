@@ -1,30 +1,83 @@
+/* Existing styles */
 div {
     font-family: Arial, sans-serif;
     font-size: 16px;
-  }
-  h2 {
+}
+
+h2 {
     background-color: lightblue;
-  }
-  a {
+}
+
+a {
     background-color: lightgrey;
-  }
-  main {
+}
+
+main {
     background-color: #f0f0f0;
     font-size: 18px;
-  }
-  footer {
+}
+
+footer {
     background-color: darkgrey;
-  }
-  li {
+}
+
+/* Commented out li styles */
+/*
+li {
     display: block;
     width: 200px;
-  }
-  h1 {
+}
+*/
+
+h1 {
     text-align: center;
     font-family: 'Georgia', serif;
     color: darkblue;
-  }
-  p {
+}
+
+p {
     line-height: 1.5;
-  }
-              
+}
+
+/* New styles */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    background: white;
+    color: black;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+    left: 0;
+}
+
+nav {
+    display: inline-block;
+    width: 80%;
+}
+
+nav img {
+    width: 10%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    justify-content: center;
+    align-items: start;
+    row-gap: 20px;
+}
+
+.grid img {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
